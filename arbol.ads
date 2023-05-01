@@ -16,7 +16,10 @@ generic
       procedure Limpiar(Ptr: in out TipoArbol);
       function Izq(Ptr: TipoArbol) return TipoArbol;
       function Der(Ptr: TipoArbol) return TipoArbol;
-      function Info(Ptr: TipoArbol) return TipoElem;
+      function Info(Ptr: Tipoarbol) return Tipoelem;
+      procedure Inorden (Ptr: in Tipoarbol); -- Imprime los elementos en orden de menor a mayor.
+      procedure Preorden (Ptr: in Tipoarbol); --Imprime
+      procedure Posorden (ptr: in tipoarbol); -- Imprime
       Arbolvacio: exception;
    
       private
